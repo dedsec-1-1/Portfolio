@@ -1,0 +1,22 @@
+* {
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    width: 100%;
+    display: inline;
+}
+
+h1 {
+    animation: glitch 1s steps(100) infinite;
+    font-size: large;
+    display: block;
+    text-align: start;
+}
+
+.navigation-container {
+    display: flex;
+    
+}
