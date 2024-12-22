@@ -4,19 +4,22 @@
     padding: 0;
 }
 
-.navigation {
+body {
+    background-color: #2b5329;
+}
+
+.code-background-container {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    display: inline;
+    height: 100%;
+    text-align: center;
+    overflow: hidden;
 }
 
-h1 {
-    animation: glitch 1s steps(100) infinite;
-    font-size: large;
-    display: block;
-    text-align: start;
-}
-
-.navigation-container {
-    display: flex;
+svg {
+    display: inline-block;
+    height: 100%;
     
 }
