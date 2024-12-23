@@ -1,6 +1,6 @@
 const SYMBOLS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+[{]}\\|;:,<.>/?"
 
-document.getElementById("navigation-title").onmouseover = event => {
+document.getElementById("header-title").onmouseleave = event => {
     let iterations = 0;
     const textLength = event.target.dataset.value.length;
 
@@ -18,5 +18,5 @@ document.getElementById("navigation-title").onmouseover = event => {
         if (iterations >= textLength) clearInterval(interval);
 
         iterations += 1;
-    }, 70);
+    }, 50);
 };
