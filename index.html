@@ -22,7 +22,7 @@
 <body>
     <header>
         <div id="header-section">
-            <div data-value="MY&lt;PORTFOLIO/&gt;" id="header-title">MY&lt;PORTFOLIO/&gt;</div>
+            <div data-value="&lt;WELCOME/&gt;" id="header-title">&lt;WELCOME/&gt;</div>
             <div id="settings">
                 <!-- Settings for the falling animation. In the future. -->
             </div>
@@ -32,34 +32,58 @@
     </header>
 
     <nav id="navigation" class="navigation-hidden">
-        <div class="navigation-item"><a href="#"><i class="material-icons">home</i></a></div>
-        <div class="navigation-item"><a href="#"><i class="material-icons">mood</i></a></div>
-        <div class="navigation-item"><a href="#"><i class="material-icons">work</i></a></div>
-        <div class="navigation-item"><a href="#"><i class="material-icons">contact_mail</i></a></div>
+        <div class="navigation-item"><a href="#HOME"><i class="material-icons">home</i></a></div>
+        <div class="navigation-item"><a href="#ABOUT"><i class="material-icons">settings</i></a></div>
+        <div class="navigation-item"><a href="#PROJECTS"><i class="material-icons">work</i></a></div>
+        <div class="navigation-item"><a href="#CONTACT"><i class="material-icons">contact_mail</i></a></div>
     </nav>
 
     <main>
-        <div class="home-hero">
+        <div id="HOME" class="home-hero">
             <div class="home-hero-content">
                 <img src="/assets/images/dedsec.jpg" alt="DEDSEC-1-1 Image" width="200px" height="200px">
                 <div class="home-hero-description">
                     <h1>Hello, I'm dedsec!</h1>
                     <p>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                        I’m a teenage programmer passionate about coding and exploring new technologies. I enjoy
+                        building projects, learning about malware development, and understanding how systems work. My
+                        goal is to grow as a developer and create impactful solutions.
                     </p>
                 </div>
             </div>
         </div>
 
-        <div class="about-hero">
+        <div id="ABOUT" class="about-hero">
+            <div class="about-hero-description">
+                Languages and Frameworks i use
+            </div>
+            <div class="about-hero-wraper">
+                <div class="about-hero-techologies">
+                    <img class="logo logo1" src="/assets/images/techologies/Python-logo.png" alt="Python Logo">
+                    <img class="logo logo2" src="assets/images/techologies/C_Logo.png" alt="C Logo">
+                    <img class="logo logo3" src="assets/images/techologies/JavaScript_logo.png" alt="JS Logo">
+                    <img class="logo logo4" src="assets/images/techologies/HTML5_logo.png" alt="HTML Logo">
+                    <img class="logo logo5" src="assets/images/techologies/CSS3_logo.png" alt="CSS Logo">
+                    <img class="logo logo6" src="assets/images/techologies/django-logo.png" alt="Django Logo">
+                    <img class="logo logo7" src="assets/images/techologies/React-logo.png" alt="React Logo">
+                </div>
+                <div class="about-hero-techologies-backwards">
+                    <img class="logo-backwards logo1" src="/assets/images/techologies/React-logo.png" alt="React Logo">
+                    <img class="logo-backwards logo2" src="assets/images/techologies/django-logo.png" alt="Django Logo">
+                    <img class="logo-backwards logo3" src="assets/images/techologies/CSS3_logo.png" alt="CSS Logo">
+                    <img class="logo-backwards logo4" src="assets/images/techologies/HTML5_logo.png" alt="HTML Logo">
+                    <img class="logo-backwards logo5" src="assets/images/techologies/JavaScript_logo.png" alt="JS Logo">
+                    <img class="logo-backwards logo6" src="assets/images/techologies/C_Logo.png" alt="C Logo">
+                    <img class="logo-backwards logo7" src="assets/images/techologies/Python-logo.png" alt="Python Logo">
+                </div>
+            </div>
+        </div>
+
+        <div id="PROJECTS" class="projects-hero">
 
         </div>
 
-        <div class="projects-hero">
-
-        </div>
-
-        <div class="contact-hero">
+        <div id="CONTACT" class="contact-hero">
 
         </div>
     </main>

@@ -1,4 +1,4 @@
-/* GLITCH EFFECT */
+/* GLITCH ANIMATION */
 @keyframes glitch {
   0% {
     text-shadow: 1px 0 0 red, -1px 0 0 blue;
@@ -180,6 +180,7 @@
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
 }
+/* GLITCH ANIMATION */
 
 /* DROP ANIMATION */
 @keyframes dropping {
@@ -210,3 +211,46 @@
     opacity: 0;
   }
 }
+/* DROP ANIMATION */
+
+/* SCROLL ANIMATION */
+@keyframes scrollDown {
+  to {
+      top: 100%;
+  }
+}
+
+@keyframes scrollUp {
+  to {
+      bottom: 100%;
+  }
+}
+
+.logo1 {
+  animation-delay: calc(30s / 7 * (7 - 1) * -1);
+}
+
+.logo2 {
+  animation-delay: calc(30s / 7 * (7 - 2) * -1);
+}
+
+.logo3 {
+  animation-delay: calc(30s / 7 * (7 - 3) * -1);
+}
+
+.logo4 {
+  animation-delay: calc(30s / 7 * (7 - 4) * -1);
+}
+
+.logo5 {
+  animation-delay: calc(30s / 7 * (7 - 5) * -1);
+}
+
+.logo6 {
+  animation-delay: calc(30s / 7 * (7 - 6) * -1);
+}
+
+.logo7 {
+  animation-delay: calc(30s / 7 * (7 - 7) * -1);
+}
+/* SCROLL ANIMATION */
