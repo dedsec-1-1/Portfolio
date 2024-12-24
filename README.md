@@ -21,7 +21,7 @@ Welcome to my portfolio! 🚀 This site showcases my projects, skills, and passi
 ## How to Use  
 1. Clone this repository:  
    ```bash  
-   git clone https://github.com/your-username/portfolio.git  
+   git clone https://github.com/dedsec-1-1/portfolio.git  
    ```  
 2. Navigate to the project directory:  
    ```bash  
