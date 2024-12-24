@@ -1,9 +1,11 @@
+globalThis.isFalling = true;
+
 const fallingDIV = document.getElementById("header-section");
 const digitsContainerWidth = 20;
 const windowWidth = window.innerWidth;
 
-// Calculate the number of lines based on the screen width minus 2 lines
-const LINES = Math.floor(windowWidth / digitsContainerWidth) - 2;
+// Calculate the number of lines based on the screen width minus 1 lines so it doesnt overflow
+const LINES = Math.floor(windowWidth / digitsContainerWidth) - 1;
 let occupiedLines = new Set(); // Keep track of occupied lines
 
 // Function that returns random int
@@ -42,7 +44,7 @@ async function falling() {
 
     // Append the container to the fallingDIV
     fallingDIV.appendChild(digitsContainer);
-    
+
     // Await a delay before removing the container
     await new Promise(resolve => setTimeout(resolve, 2000));
 
@@ -53,5 +55,10 @@ async function falling() {
 
 // Call `falling` every half second
 setInterval(() => {
-    falling();
-}, 250);
+    if (window.isFalling) {
+        falling();
+    }
+    console.log(globalThis.isFalling);
+}, 300);
+
+// Function that checks where the user at. For stopping the falling generator.
